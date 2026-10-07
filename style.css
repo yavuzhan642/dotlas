@@ -1,10 +1,10 @@
 :root {
-  --bg: #111a22;
-  --card: #192530;
+  --bg: #15171a;
+  --card: #212428;
   --text: #f0f6fb;
-  --muted: rgba(240, 246, 251, 0.64);
+  --muted: #a9aeb6;
   --accent: #8cc8ff;
-  --line: rgba(240, 246, 251, 0.09);
+  --line: rgba(255, 255, 255, 0.09);
 }
 
 * { box-sizing: border-box; }
@@ -39,7 +39,7 @@ main {
   margin: 0 0.02em;
   border-radius: 50%;
   background: var(--accent);
-  border: 0.09em solid #fff;
+  border: 0.09em solid var(--text);
 }
 
 h1 { font-size: 30px; line-height: 1.2; margin: 36px 0 8px; }
@@ -57,6 +57,18 @@ a { color: var(--accent); }
 }
 
 .card p { margin: 6px 0; }
+
+.tag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 7px;
+  border-radius: 8px;
+  background: rgba(140, 200, 255, 0.16);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  vertical-align: 2px;
+}
 
 nav {
   display: flex;
